@@ -1,3 +1,4 @@
+
 <?php
 
    class arQULPluginConfiguration extends sfPluginConfiguration
