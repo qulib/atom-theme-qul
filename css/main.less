@@ -1,36 +1,41 @@
 // OpenSans font
-
 @font-face {
-  font-family: 'Open Sans Regular';
-  src: url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.eot');
-  src: url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff'),
-    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype'),
-    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+  font-family: "Open Sans Regular";
+  src: url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.eot");
+  src: url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.woff")
+      format("woff"),
+    url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.ttf")
+      format("truetype"),
+    url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.svg#OpenSansRegular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans Semibold';
-  src: url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.eot');
-  src: url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.woff') format('woff'),
-    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.ttf') format('truetype'),
-    url('../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.svg#OpenSansRegular') format('svg');
+  font-family: "Open Sans Semibold";
+  src: url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.eot");
+  src: url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.woff")
+      format("woff"),
+    url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.ttf")
+      format("truetype"),
+    url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Semibold-webfont.svg#OpenSansRegular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 // Bootstrap v2
-
 @import "../../../vendor/bootstrap/less/reset.less";
 @import "../../arDominionPlugin/css/less/variables";
 @import "../../arDominionPlugin/css/less/loader-bootstrap";
 @import "../../arDominionPlugin/css/less/loader-yui";
 
 // arDominionPlugin
-
 @import "../../arDominionPlugin/css/less/mixins.less";
 @import "../../arDominionPlugin/css/less/scaffolding.less";
 @import "../../arDominionPlugin/css/less/type.less";
@@ -46,25 +51,34 @@
 @import "../../arDominionPlugin/css/less/legacy.less";
 
 // Local tweaks
-
 @queens-blue: #002f5e;
+@queens-red: #b81237;
+@queens-gold: #febe10;
+@qul-blue: #406486; 
+@qul-yellow: #fcc34c;
+@qul-gray: #8c8c8c;
+@link-blue: #1d70ad;
 
 body {
-  background-color: #999;
+  background-color: white;
 }
 
-h1, h2, h3, h5, h6 {
-  color: #333;
+h1,
+h2,
+h3,
+h5,
+h6 {
+  color: @queens-blue;
 }
 
 .fieldset-wrapper,
 #content {
-  background-color: #777;
+  background-color: white;
 }
 
 .fieldset-wrapper,
 #content {
-  border-color: #666;
+  border-color: #white;
 }
 
 #site-slogan {
@@ -75,7 +89,6 @@ h1, h2, h3, h5, h6 {
   border-color: @queens-blue;
 }
 
-a,
 #browse-menu button,
 #search-form-wrapper button:before,
 #top-bar nav button,
@@ -84,6 +97,14 @@ a,
   color: @queens-blue;
 }
 
+a {
+  color: @link-blue;
+}
+
+a:hover {
+  color: @queens-red;
+}
+
 .top-dropdown-container .top-dropdown-body {
-  background-color: #333333;
+  background-color: white;
 }
