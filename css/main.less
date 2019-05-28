@@ -81,12 +81,22 @@ a {
   }
 }
 
+#site-slogan {
+  display: none;
+}
+
 #top-bar {
   background-color: white;
   border-bottom: 3px solid @queens-blue;
 
   .top-item {
-    color: @queens-blue;
+    &:before {
+      color: @queens-blue;
+
+      &:hover {
+        color: @queens-blue;
+      }
+    }
 
     &:hover {
       background-color: transparent;
@@ -102,7 +112,7 @@ a {
   #search-form-wrapper {
     input {
       background-color: white;
-      border-color: @qul-blue;
+      border: 1px solid @qul-blue;
     }
 
     button {
