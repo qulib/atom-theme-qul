@@ -83,25 +83,32 @@ a {
 
 #top-bar {
   background-color: white;
+  border-bottom: 3px solid @queens-blue;
 
-  button {
-    border: none;
+  .top-item {
     color: @queens-blue;
 
-    .top-dropdown,
-    #search-form-wrapper button {
-      background-color: @qul-blue;
-      color: white;
-    }
-
-    .top-dropdown {
-      background-image: url(../../arDominionPlugin/images/white-arrow.png);
+    &:hover {
+      background-color: transparent;
     }
   }
 
-  input {
-    background-color: white;
-    border-color: @queens-blue;
+  .top-dropdown {
+    background-color: @qul-blue;
+    color: white;
+    background-image: url(../../arDominionPlugin/images/white-arrow.png);
+  }
+
+  #search-form-wrapper {
+    input {
+      background-color: white;
+      border-color: @qul-blue;
+    }
+
+    button {
+      background-color: @qul-blue;
+      color: white;
+    }
   }
 }
 
