@@ -1,4 +1,6 @@
 // OpenSans font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+
 @font-face {
   font-family: "Open Sans Regular";
   src: url("../../arDominionPlugin/vendor/fonts/open-sans/OpenSans-Regular-webfont.eot");
@@ -53,11 +55,12 @@
 // Local tweaks
 @queens-blue: #002f5e;
 @queens-red: #b81237;
-@queens-gold: #febe10;
 @qul-blue: #406486;
-@qul-yellow: #fcc34c;
 @qul-gray: #8c8c8c;
 @link-blue: #1d70ad;
+
+//Dominion overides 
+@orange: @queens-blue;
 
 body {
   background-color: white;
@@ -70,6 +73,7 @@ h3,
 h5,
 h6 {
   color: @queens-blue;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
