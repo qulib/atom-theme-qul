@@ -87,19 +87,20 @@ a {
 
 #top-bar {
   background-color: white;
-  border-bottom: 3px solid @queens-blue;
+  border-bottom: 1px solid @qul-gray;
+  padding: 1rem;
 
   .top-item {
     &:before {
       color: @queens-blue;
-
-      &:hover {
-        color: @queens-blue;
-      }
     }
 
     &:hover {
       background-color: transparent;
+
+      &:before {
+        color: @queens-blue;
+      }
     }
   }
 
@@ -124,6 +125,8 @@ a {
 
 // main content area
 #content {
+  border: 1px solid @qul-gray;
+
   a {
     font-weight: bold;
   }
