@@ -61,25 +61,7 @@
 
 body {
   background-color: white;
-  font-size: 16px;
-}
-
-#top-bar {
-  background-color: white;
-
-  button {
-    background-color: @qul-blue;
-    color: white;
-
-    &:hover {
-      background-color: @queens-blue;
-    }
-  }
-
-  input {
-    background-color: white;
-    border-color: @queens-blue;
-  }
+  font-size: 14px;
 }
 
 h1,
@@ -96,5 +78,30 @@ a {
 
   &:hover {
     color: @queens-red;
+  }
+}
+
+#top-bar {
+  background-color: white;
+
+  button {
+    background-color: @qul-blue !important;
+    color: white;
+
+    &:hover {
+      background-color: @queens-blue;
+    }
+  }
+
+  input {
+    background-color: white;
+    border-color: @queens-blue;
+  }
+}
+
+// main content area
+#wrapper {
+  a {
+    font-weight: bold;
   }
 }
