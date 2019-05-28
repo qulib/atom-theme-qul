@@ -85,11 +85,17 @@ a {
   background-color: white;
 
   button {
-    background-color: @qul-blue !important;
-    color: white;
+    border: none;
+    color: @queens-blue;
 
-    &:hover {
-      background-color: @queens-blue;
+    .top-dropdown,
+    #search-form-wrapper button {
+      background-color: @qul-blue;
+      color: white;
+    }
+
+    .top-dropdown {
+      background-image: url(../../arDominionPlugin/images/white-arrow.png);
     }
   }
 
@@ -100,7 +106,7 @@ a {
 }
 
 // main content area
-#wrapper {
+#content {
   a {
     font-weight: bold;
   }
