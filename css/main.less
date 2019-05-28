@@ -59,9 +59,27 @@
 @qul-gray: #8c8c8c;
 @link-blue: #1d70ad;
 
-body,
+body {
+  background-color: white;
+  font-size: 16px;
+}
+
 #top-bar {
   background-color: white;
+
+  button {
+    background-color: @qul-blue;
+    color: white;
+
+    &:hover {
+      background-color: @queens-blue;
+    }
+  }
+
+  input {
+    background-color: white;
+    border-color: @queens-blue;
+  }
 }
 
 h1,
@@ -70,12 +88,13 @@ h3,
 h5,
 h6 {
   color: @queens-blue;
+  font-weight: 300;
 }
 
 a {
   color: @link-blue;
-}
 
-a:hover {
-  color: @queens-red;
+  &:hover {
+    color: @queens-red;
+  }
 }
