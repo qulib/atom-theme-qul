@@ -99,7 +99,7 @@ a {
       width: 36px;
 
       &:before {
-        font-size: 13px;
+        font-size: 14px;
       }
     }
   }
@@ -119,8 +119,16 @@ a {
   display: flex;
   flex-direction: column-reverse;
 
+  h3,
+  h4 {
+    font-size: large;
+    color: @queens-blue;
+    text-transform: capitalize;
+  }
+
   #physical-objects {
-    background-color: @queens-gold;
+    background-color: @qul-yellow;
+    border: 1px solid @queens-gold;
     padding: 1rem;
   }
 }
