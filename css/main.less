@@ -27,6 +27,7 @@
 @queens-red: #b81237;
 @queens-gold: #febe10;
 @qul-blue: #406486;
+@qul-light-blue: #e5eaef;
 @qul-gray: #8c8c8c;
 @qul-yellow: #fcc34c;
 @link-blue: #1d70ad;
@@ -36,6 +37,15 @@
 @linkColor: @link-blue;
 @blue: @qul-blue;
 @grayLight: @qul-gray;
+
+//jsTree overides
+.jstree-default {
+  background: @qul-light-blue;
+
+  &.jstree-clicked {
+    background: darken(@qul-light-blue, 2%);
+  }
+}
 
 body {
   background-color: white;
@@ -69,6 +79,10 @@ a {
   .top-item {
     &:before {
       color: @queens-blue;
+    }
+
+    span {
+      color: white;
     }
 
     &:hover {
